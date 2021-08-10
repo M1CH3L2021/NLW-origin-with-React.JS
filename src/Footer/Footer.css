@@ -1,0 +1,42 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 6rem 12.3rem;
+
+    background-color: var(--primary-color);
+}
+
+.footer1{
+    display: flex;
+    flex-direction: column
+}
+
+.footer1 > span{
+    font-family: 'DM sans';
+    font-size: 1.6rem;
+    color: var(--bg2)
+}
+
+.footer1 > span:nth-child(2){
+    margin-top: 2.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.socials > img{
+    cursor: pointer;
+}
+
+.socials > img:nth-child(2){
+    margin: 0 3.2rem;
+}
+
+@media screen and (max-width: 800px) {
+    .footer{
+        padding: 6.4rem 2.4rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.2rem;
+    }
+}

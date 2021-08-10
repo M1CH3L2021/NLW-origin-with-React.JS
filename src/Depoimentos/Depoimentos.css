@@ -1,0 +1,121 @@
+.depoimentos{
+    padding: 16rem 12.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.depoimentos > .divider4{
+    height: 1px;
+    width: 100%;
+    background-image: linear-gradient(to left, rgb(242,252,248), rgb(105,185,157));
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.depoimentos > h1{
+    max-width: 48rem;
+    margin-bottom: 6.4rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.speechs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5.3rem;
+}
+
+.slider{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    width: 159.6rem;
+    transition: .5s;
+}
+
+.speech{
+    padding: 5.2rem;
+    box-shadow: 3px 3px 20px 0 rgba(0,0,0,0.1);
+    border-radius: .5rem;
+    width: 90vw;
+    max-width: 50rem;
+}
+
+.speech > p{
+    line-height: 2.6rem;
+    color: var(--dark);
+    margin-bottom: 2.4rem;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.person > span{
+    color: var(--gray);
+    font-size: 1.6rem
+}
+
+.bullets{
+    display: none;
+}
+
+.bullets input{
+    display: none;
+}
+
+.bullets label{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    background-color: var(--border);
+    cursor: pointer;
+}
+
+.bullets .selectedBullet{
+    background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 1120px) {
+    .depoimentos{
+        padding: 8rem 2.4rem;
+    }
+
+    .speechs{
+        overflow: hidden;
+        max-width: 55rem;
+    }
+
+    .slider{
+        transform: translateX(26.5%);
+    }
+
+    .speech{
+        padding: 3.2rem;
+    }
+
+    .bullets{
+        display: flex;
+        gap: .8rem;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .depoimentos{
+        padding: 8rem 0;
+    }
+
+    .depoimentos > h1{
+        padding: 0 2.4rem;
+    }
+}

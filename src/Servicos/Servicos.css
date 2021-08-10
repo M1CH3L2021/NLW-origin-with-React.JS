@@ -1,0 +1,62 @@
+.servicos{
+    padding: 16rem 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+    background-color: var(--bg2);
+    position: relative;
+}
+
+.servicos > .divider3{
+    height: 1px;
+    width: 100%;
+    background-image: linear-gradient(to right, rgb(242,252,248), rgb(105,185,157));
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.servicos h1{
+    margin-top: 0;
+    line-height: 0;
+}
+
+.servicos > p{
+    max-width: 52rem;
+    font-size: 1.8rem;
+    color: var(--dark);
+    margin-bottom: 6.4rem;
+    margin-top: 3.5rem;
+}
+
+.servicos > p > span{
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.services{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services > div{
+    padding: 5.8rem 4.8rem;
+    border-bottom: .4rem solid var(--primary-color);
+    box-shadow: 3px 3px 20px 0 rgba(0,0,0,0.1)
+}
+
+.services > div > p{
+    max-width: 25.6rem;
+}
+
+@media screen and (max-width: 680px) {
+    .servicos{
+        padding: 8rem 2.4rem;
+    }
+}
